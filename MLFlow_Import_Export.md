@@ -17,12 +17,12 @@ We can use MLFlow import export library to import export the databricks models.
 
 # 2. Export the model
   %sh
-  MLFLOW_TRACKING_URI='databricks://default'
-  DATABRICKS_HOST=https://XXXX.azuredatabricks.net
-  DATABRICKS_TOKEN=aste the token generated from above steps
-  export-experiment \
-  -- experiment experiment_id
-  -- output-dir /dbfs/FileStore/models/filename
+  MLFLOW_TRACKING_URI='databricks://default'  
+  DATABRICKS_HOST=https://XXXX.azuredatabricks.net 
+  DATABRICKS_TOKEN=aste the token generated from above steps  
+  export-experiment \  
+  -- experiment experiment_id  
+  -- output-dir /dbfs/FileStore/models/filename 
 
 # Download the created tar experiments using below url
   https://XXXX.azuredatabricks.net/files/models/filename.tar
