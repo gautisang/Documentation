@@ -1,11 +1,11 @@
 
 We can use MLFlow import export library to import export the databricks models.
 
-# Create Databricks Personal Access Token
+# _Create Databricks Personal Access Token_
   User -> Developer -> Access Token -> Manage -> Generate New token    
   Once the token is generated, copy and save it somewhere as we won't be able to see this later.
 
-# _Source Databricks Workspace_
+# _Export Model From Source Databricks Workspace_
 ## 1. Configure Databricks CLI
   Once the token is generated, we need to configure teh Databricks CLI.
   1. Start a cluster in Databricks
@@ -28,7 +28,7 @@ We can use MLFlow import export library to import export the databricks models.
   https://XXXX.azuredatabricks.net/files/models/filename.tar
 
 
-# Import into Target Databricks Workspace
+# _Import into Target Databricks Workspace_
 ## 1. Upload the downloaded tar file into the workspace and untar the same
     tar : tar cvf filename.tar filename
     untar : tar -xvf filename.tar
@@ -50,7 +50,7 @@ We can use MLFlow import export library to import export the databricks models.
     -- experiment-name experiment_id    
     -- input-dir /dbfs/FileStore/models/filename    
 
-# Register Model to Unity Catalog
+# _Register Model to Unity Catalog_
 
 %pip install "mlflow-skinny[databricks]>=2.4.1"
 dbutils.library.restartPython()
