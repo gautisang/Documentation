@@ -1,11 +1,11 @@
 
 We can use MLFlow import export library to import export the databricks models.
 
-# Create databricks Personal Access Token
+# Create Databricks Personal Access Token
   User -> Developer -> Access Token -> Manage -> Generate New token    
   Once the token is generated, copy and save it somewhere as we won't be able to see this later.
 
-# Source Databricks Workspace
+_ # Source Databricks Workspace _
 ## 1. Configure Databricks CLI
   Once the token is generated, we need to configure teh Databricks CLI.
   1. Start a cluster in Databricks
