@@ -55,12 +55,12 @@ We can use MLFlow import export library to import export the databricks models.
 %pip install "mlflow-skinny[databricks]>=2.4.1"
 dbutils.library.restartPython()
 
-import mlflow
-catalog="XX"
-schema="XXXX"
-model_name="XXXX"
-mlflow.set_registry_uri("databricks-uc")
-mlflow.register.model("runs:/XXXXX/model",f"{catalog}.{schema}.{model_name}")
+import mlflow    
+catalog="XX"    
+schema="XXXX"    
+model_name="XXXX"    
+mlflow.set_registry_uri("databricks-uc")    
+mlflow.register.model("runs:/XXXXX/model",f"{catalog}.{schema}.{model_name}")     
 
 
 
