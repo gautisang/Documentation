@@ -6,7 +6,7 @@ We can use MLFlow import export library to import export the databricks models.
   Once the token is generated, copy and save it somewhere as we won't be able to see this later.
 
 # Source Databricks Workspace
-## 1. Configure Databricks CLI
+__1. Configure Databricks CLI__
   Once the token is generated, we need to configure teh Databricks CLI.
   1. Start a cluster in Databricks
   2. Go to Web Terminal 
