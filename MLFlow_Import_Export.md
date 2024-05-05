@@ -28,7 +28,7 @@ We can use MLFlow import export library to import export the databricks models.
   https://XXXX.azuredatabricks.net/files/models/filename.tar
 
 
-# Import into Target Databricks Workspace**
+# Import into Target Databricks Workspace
 ## 1. Upload the downloaded tar file into the workspace and untar the same
     tar : tar cvf filename.tar filename
     untar : tar -xvf filename.tar
@@ -50,7 +50,7 @@ We can use MLFlow import export library to import export the databricks models.
     -- experiment-name experiment_id    
     -- input-dir /dbfs/FileStore/models/filename    
 
-#**Register Model to Unity Catalog**
+# Register Model to Unity Catalog
 
 %pip install "mlflow-skinny[databricks]>=2.4.1"
 dbutils.library.restartPython()
