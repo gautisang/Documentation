@@ -34,14 +34,14 @@ We can use MLFlow import export library to import export the databricks models.
     untar : tar -xvf filename.tar
 # 2. Create databricks Personal Access Token
   Create the token as stated above
-# 2. Configure databricks CLI
+# 3. Configure databricks CLI
   1. Start a cluster in Databricks
   2. Go to Web Terminal 
   3. Type `databricks configure` and hit enter
   4. Enter the host Name : https://XXXX.azuredatabricks.net
   5. Enter the databricks user name : XXXX
   6. Enter the password : paste the token generated from above steps
-# 3. Import the model
+# 4. Import the model
    %sh    
     MLFLOW_TRACKING_URI=databricks    
     DATABRICKS_HOST=https://XXXX.azuredatabricks.net    
