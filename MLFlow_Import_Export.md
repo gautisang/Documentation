@@ -28,7 +28,7 @@ We can use MLFlow import export library to import export the databricks models.
   https://XXXX.azuredatabricks.net/files/models/filename.tar
 
 
-# _Import into Target Databricks Workspace_
+# _Import Model Into Target Databricks Workspace_
 ## 1. Upload the downloaded tar file into the workspace and untar the same
     tar : tar cvf filename.tar filename
     untar : tar -xvf filename.tar
