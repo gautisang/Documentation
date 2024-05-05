@@ -42,13 +42,13 @@ We can use MLFlow import export library to import export the databricks models.
   5. Enter the databricks user name : XXXX
   6. Enter the password : paste the token generated from above steps
 # 3. Import the model
-   %sh
-    MLFLOW_TRACKING_URI=databricks
-    DATABRICKS_HOST=https://XXXX.azuredatabricks.net
-    DATABRICKS_TOKEN=paste the token generated from above steps
-    import-experiment \
-    -- experiment-name experiment_id
-    -- input-dir /dbfs/FileStore/models/filename
+   %sh    
+    MLFLOW_TRACKING_URI=databricks    
+    DATABRICKS_HOST=https://XXXX.azuredatabricks.net    
+    DATABRICKS_TOKEN=paste the token generated from above steps    
+    import-experiment \    
+    -- experiment-name experiment_id    
+    -- input-dir /dbfs/FileStore/models/filename    
 
 **Register Model to Unity Catalog**
 
