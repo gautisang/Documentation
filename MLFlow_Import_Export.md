@@ -5,6 +5,12 @@ We can use MLFlow import export library to import export the databricks models.
   User -> Developer -> Access Token -> Manage -> Generate New token    
   Once the token is generated, copy and save it somewhere as we won't be able to see this later.
 
+  ![alt text](Developer.png)
+
+  ![alt text](GenerateToken.png)
+
+
+
 # _Export Model From Source Databricks Workspace_
 
 %pip install git+https://github.com/mlflow/mlflow-export-import
