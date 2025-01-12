@@ -1,7 +1,9 @@
+# How to export and import Databricks Model from one workspace to another workspace.
+
 
 We can use MLFlow import export library to import export the databricks models.
 
-# _Create Databricks Personal Access Token_
+## _Create Databricks Personal Access Token_
   User -> Developer -> Access Token -> Manage -> Generate New token    
   Once the token is generated, copy and save it somewhere as we won't be able to see this later.
 
@@ -11,7 +13,7 @@ We can use MLFlow import export library to import export the databricks models.
 
 
 
-# _Export Model From Source Databricks Workspace_
+## _Export Model From Source Databricks Workspace_
 
 %pip install git+https://github.com/mlflow/mlflow-export-import
 ## 1. Configure Databricks CLI
@@ -37,7 +39,7 @@ We can use MLFlow import export library to import export the databricks models.
   https://XXXX.azuredatabricks.net/files/models/filename.tar
 
 
-# _Import Model Into Target Databricks Workspace_
+## _Import Model Into Target Databricks Workspace_
 ## 1. Upload the downloaded tar file into the workspace and untar the same
     tar : tar cvf filename.tar filename
     untar : tar -xvf filename.tar
@@ -59,7 +61,7 @@ We can use MLFlow import export library to import export the databricks models.
     -- experiment-name experiment_id    
     -- input-dir /dbfs/FileStore/models/filename    
 
-# _Register Model to Unity Catalog_
+## _Register Model to Unity Catalog_
 
 %pip install "mlflow-skinny[databricks]>=2.4.1"
 dbutils.library.restartPython()
